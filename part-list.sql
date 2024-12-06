@@ -1,4 +1,11 @@
---- part-list.sql
+-------------------------------------------------------------------------------------------------
+--Script Name    : part-list.sql
+--Description    : Generate reorg DDL for a global indexes for partitioned tables
+--Args           : @part-list owner
+--Author         : Abhilash Kumar Bhattaram
+--Email          : abhilash8@gmail.com
+--GitHb          : https://github.com/abhilash-8/reorg
+-------------------------------------------------------------------------------------------------
 spool part-list.out
 def owner=&1
 COLUMN table_name FORMAT A30
